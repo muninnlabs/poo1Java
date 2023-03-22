@@ -1,4 +1,6 @@
-public class Livro {
+import interfaces.CSVGenerator;
+
+public class Livro implements CSVGenerator{
     
     private String nome;
     private Autor autor;
@@ -14,6 +16,11 @@ public class Livro {
         this.cidade = cidade;
         this.anoPublicacao = anoPublicacao;
         this.numeroEdicao = numeroEdicao;
+    }
+
+    @Override
+    public String generateCSV(){
+        return this.nome+";"+autor.nome+";"+this.cidade+";"+this.editora+";"+this.anoPublicacao;
     }
 
     public void setNome(String nome){
