@@ -9,6 +9,8 @@ public class Autor extends Pessoa{
         this.formacao = formacao;
     }
 
+    
+
     public String getGenero() {
         return genero;
     }
@@ -18,7 +20,6 @@ public class Autor extends Pessoa{
     }
 
     public String getFormacao() {
-
         return formacao;
     }
 
@@ -37,6 +38,13 @@ public class Autor extends Pessoa{
             }
         }
     }
-
+    public void showAutor(){
+        System.out.println(
+            "Nome autor: " + this.nome + 
+            " Idade autor: " + this.idade +  
+            " Cidade autor: " + this.cidadeDeNascimento +  
+            " Genero autor: " + this.genero + 
+            " Formacao autor: " + this.formacao);
+    }
     
 }
