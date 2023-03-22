@@ -65,11 +65,11 @@ public class Livro {
     }
 
     public void imprimir() {
-        System.out.println( "Nome: " + this.nome);
-        System.out.println("Autor: " + this.autor);
-        System.out.println("Editora: " + this.editora);
-        System.out.println("Cidade: " + this.cidade);
-        System.out.println("Ano Publicacao: " + this.anoPublicacao);
-        System.out.println("Numero edicao: " + this.numeroEdicao);
+        System.out.println( "Nome: " + this.getNome());
+        System.out.println("Editora: " + this.getEditora());
+        System.out.println("Cidade: " + this.getCidade());
+        System.out.println("Ano Publicacao: " + this.getAnoPublicacao());
+        System.out.println("Numero edicao: " + this.getNumeroEdicao());
+        this.getAutor().showAutor();
     }
 }
